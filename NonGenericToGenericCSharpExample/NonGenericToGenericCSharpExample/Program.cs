@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace NonGenericToGenericCSharpExample
 {
-    internal class NonGenericToGenericCSharpExample
+    internal class NonGenericToGenericCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("T2");  
+            Console.WriteLine("T2");
+            NonGenericToGenericCSharpExample.NonGeneric.Service.CallNonGenricClass();
+            NonGenericToGenericCSharpExample.Generic.Service.CallGenricClass();
         }
+
     }
 }
